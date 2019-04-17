@@ -44,7 +44,7 @@ def weather(days):
                 weatherToday = "Rainy"
                 activityList.append("Rainy")
         elif weatherToday == "Sunny":
-            change = np.random.choice(transiionName[1],replace=True,p=transitionMatrix[1])
+            change = np.random.choice(transitionName[1],replace=True,p=transitionMatrix[1])
             if change == "SS":
                 prob = prob * 0.7
                 activityList.append("Sunny")
